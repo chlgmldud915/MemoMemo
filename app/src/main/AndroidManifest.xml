@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.heeyoung.multimemo">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="MemoMemo"
+        android:theme="@style/AppTheme"
+        >
+
+        <!-- 스플래시 -->
+        <activity
+            android:name="org.heeyoung.multimemo.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.heeyoung.multimemo.PasswordSplash"></activity>
+        <activity android:name="org.heeyoung.multimemo.PasswordActivity"></activity>
+        <activity
+            android:name="org.heeyoung.multimemo.MultiMemoActivity"
+            android:label="MemoMemo"></activity>
+        <activity android:name="org.heeyoung.multimemo.MemoInsertActivity" />
+        <activity android:name="org.heeyoung.multimemo.PhotoCaptureActivity" />
+        <activity android:name="org.heeyoung.multimemo.PhotoSelectionActivity" />
+        <activity
+            android:name="org.heeyoung.multimemo.SlideActivity"
+            android:label="@string/title_activity_slide"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
